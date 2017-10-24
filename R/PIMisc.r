@@ -1,3 +1,6 @@
+require(ggplot2)
+require(caret)
+
 #' A Cat Function
 #'
 #' This function allows you to express your love of cats.
