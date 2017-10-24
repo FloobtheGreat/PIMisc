@@ -15,3 +15,22 @@ cat_function <- function(love=TRUE){
     print("I am not a cool person.")
   }
 }
+
+
+#' A Hist Function
+#'
+#' This function allows you to plot histograms for all columns in data.frame
+#' @param x No default. A data.frame
+#' @keywords hist
+#' @export
+#' @examples
+#' pi_hist()
+
+pi_hist <- function(x) {
+  for (i in names(x)) {
+    hist(x[[paste(i)]],
+         main=paste('Histogram of ', i),
+         xlab = paste(i),
+         col='blue')
+  }
+}
